@@ -1,0 +1,12 @@
+/**
+ * @version		$Id: $
+ * @author		Nguyen Dinh Luan
+ * @package		Joomla!
+ * $subpackage	OJ Dropline Menu
+ * @copyright	Copyright (C) 2008 - 2011 Joomseller Solutions. All rights reserved.
+ * @license		GNU/GPL http://www.gnu.org/licenses/gpl-3.0.html, see LICENSE.txt
+ * This file may not be redistributed in whole or significant part.
+ */	
+#menu li.menuArea, #menu li.menuAreaCurrent {
+	width:140px;
+}

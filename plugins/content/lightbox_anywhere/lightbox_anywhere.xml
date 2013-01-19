@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="content" method="upgrade">
+	<name>Content - Lightbox Anywhere</name>
+	<author>Joomseller</author>
+	<creationDate>May 2012</creationDate>
+	<copyright>Copyright (C) 2008 - 2011 by Joomseller Solutions. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL version 3</license>
+	<authorEmail>admin@joomseller.com</authorEmail>
+	<authorUrl>http://joomseller.com</authorUrl>
+	<version>1.0.2</version>
+	<description>Plugin Content - Lightbox Anywhere</description>
+	<files>
+		<filename plugin="lightbox_anywhere">lightbox_anywhere.php</filename>
+		<filename>index.html</filename>
+		<folder>lightbox_anywhere</folder>
+	</files>
+	<config>
+		<fields name ="params" addfieldpath="/plugins/content/lightbox_anywhere/lightbox_anywhere/elements">
+			<fieldset name="basic">
+				<field name="" type="separator" default="PLG_CONTENT_LIGHTBOX_ANYWHERE_COMPONENT_SETTINGS" label="ToolTip" description="" />
+				<field name="integration" type="list" default="" multiple="multiple" label="PLG_CONTENT_LIGHTBOX_ANYWHERE_INTEGRATION" description="PLG_CONTENT_LIGHTBOX_ANYWHERE_INTEGRATION_DESC" class="inputbox">
+					<option value="">Select components</option>
+					<option value="com_content">Component Content</option>
+					<option value="com_k2">Component K2</option>
+					<option value="com_virtuemart">Component VirtueMart</option>
+				</field>
+				<field name="" type="separator" default="PLG_CONTENT_LIGHTBOX_ANYWHERE_COM_CONTENT_SETTINGS" label="ToolTip" description="PLG_CONTENT_LIGHTBOX_ANYWHERE_COM_CONTENT_SETTINGS_DESC" />
+				<field name="content_catid" type="category" default="" label="PLG_CONTENT_LIGHTBOX_ANYWHERE_CATEGORY" description="PLG_CONTENT_LIGHTBOX_ANYWHERE_CATEGORY_DESC" multiple="true" size="10" extension="com_content"/>
+				<field name="content_articleid" type="article" default="" label="PLG_CONTENT_LIGHTBOX_ANYWHERE_ARTICLE" description="PLG_CONTENT_LIGHTBOX_ANYWHERE_ARTICLE_DESC" />
+				<field name="" type="separator" default="PLG_CONTENT_LIGHTBOX_ANYWHERE_COM_K2_SETTINGS" label="ToolTip" description="PLG_CONTENT_LIGHTBOX_ANYWHERE_COM_K2_SETTINGS_DESC" />
+				<field name="k2_catid" type="categoryk2" default="" label="PLG_CONTENT_LIGHTBOX_ANYWHERE_CATEGORY_K2" description="PLG_CONTENT_LIGHTBOX_ANYWHERE_CATEGORY_DESC"/>
+				<field name="k2_item" type="itemk2" default="" label="PLG_CONTENT_LIGHTBOX_ANYWHERE_ITEM" description="PLG_CONTENT_LIGHTBOX_ANYWHERE_ITEM_DESC" />
+				<field name="lightbox_style" type="list" default="group1" label="PLG_CONTENT_LIGHTBOX_ANYWHERE_LIGHTBOX_STYLE" description="PLG_CONTENT_LIGHTBOX_ANYWHERE_LIGHTBOX_STYLE_DESC">
+					<option value="lightbox[roadtrip]">Mootools - Slimbox</option>
+					<option value="fancybox-buttons">jQuery - FancyBox</option>
+					<option value="group1">jQuery - Evolution</option>
+				</field>
+				
+			</fieldset>
+		</fields>
+	</config>
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_lightbox_anywhere.sys.ini</language>
+		<language tag="en-GB">en-GB.plg_content_lightbox_anywhere.ini</language>
+	</languages>
+</extension>

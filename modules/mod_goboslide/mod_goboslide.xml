@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+  <name>GoboSlide</name>
+  <author>Joohopia.com</author>
+  <version>3.0</version>
+  <creationDate>November 2012</creationDate>
+  <license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+  <description>A simple slideshow module.
+    <p>Up to 10 images and URLs.</p>
+    <p>If you like our work or want the PRO version with more options, please consider buying the full version at joohopia.com</p></description>
+  <files>
+    <filename>mod_goboslide.xml</filename>
+    <filename module="mod_goboslide">mod_goboslide.php</filename>
+    <filename>index.html</filename>
+    <filename>params.ini</filename>
+    <folder>js</folder>
+  </files>
+  <config><fields name="params"><fieldset name="basic">
+    <field name="@spacer" type="spacer" default="GENERAL PARAMETERS" label="General parameters" description="" />
+    <field name="gobuniqe" type="text" size="20" default="5" label="Uniqe ID, usefull if there is more then one slideshow." description="" />
+    <field name="width" type="text" size="20" default="950" label="Slide width in px" description="" />
+    <field name="height" type="text" size="20" default="300" label="Slide height in px" description="" />
+	<field name="gobspeed" type="text" size="20" default="5000" label="Time between slides, miliseconds (1000 is one second)." description="" />
+    <field name="slidenumber" type="list" default="4" label="Select the number of images in the GoboSlide" description="">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    </field>
+	<field name="@spacer" type="spacer" default="" label="" description="" />
+    <field name="@spacer" type="spacer" default="BORDER PARAMETERS" label="Border parameters" description="Border parameters" />
+    <field name="gobborder" type="text" size="20" default="5" label="Slide border width in px" description="" />	
+    <field name="@spacer" type="spacer" default="" label="" description="" />
+	<field name="@spacer" type="spacer" default="IMAGES PARAMETERS" label="images parameters" description="images parameters" />
+    <field name="slide1" type="imagelist" default="" label="Slideshow image #1" description="" directory="images" filter = "\.jpeg$|\.JPG$|\.jpg$|\.JPEG$" />
+    <field name="slide1url" type="text" default="http://www.joohopia.com/joomla-modules/34-goboslide-module.html" label="Link for the first image" description="Enter 'http://www.xxx.xxx'" size="52" />
+    <field name="slide2" type="imagelist" default="" label="Slideshow image #2" description="" directory="images" filter = "\.jpeg$|\.JPG$|\.jpg$|\.JPEG$" />
+    <field name="slide2url" type="text" default="http://www.joohopia.com/joomla-modules/34-goboslide-module.html" label="Link for the second image" description="Enter 'http://www.xxx.xxx'" size="52" />
+    <field name="slide3" type="imagelist" default="" label="Slideshow image #3" description="" directory="images" filter = "\.jpeg$|\.JPG$|\.jpg$|\.JPEG$" />
+    <field name="slide3url" type="text" default="http://www.joohopia.com/joomla-modules/34-goboslide-module.html" label="Link for the third image" description="Enter 'http://www.xxx.xxx'" size="52" />
+    <field name="slide4" type="imagelist" default="" label="Slideshow image #4" description="" directory="images" filter = "\.jpeg$|\.JPG$|\.jpg$|\.JPEG$" />
+    <field name="slide4url" type="text" default="http://www.joohopia.com/joomla-modules/34-goboslide-module.html" label="Link for this image" description="Enter 'http://www.xxx.xxx'" size="52" />
+    <field name="slide5" type="imagelist" default="" label="Slideshow image #5" description="" directory="images" filter = "\.jpeg$|\.JPG$|\.jpg$|\.JPEG$" />
+    <field name="slide5url" type="text" default="http://www.joohopia.com/joomla-modules/34-goboslide-module.html" label="Link for this image" description="Enter 'http://www.xxx.xxx'" size="52" />
+    <field name="slide6" type="imagelist" default="" label="Slideshow image #6" description="" directory="images" filter = "\.jpeg$|\.JPG$|\.jpg$|\.JPEG$" />
+    <field name="slide6url" type="text" default="http://www.joohopia.com/joomla-modules/34-goboslide-module.html" label="Link for this image" description="Enter 'http://www.xxx.xxx'" size="52" />
+    <field name="slide7" type="imagelist" default="" label="Slideshow image #7" description="" directory="images" filter = "\.jpeg$|\.JPG$|\.jpg$|\.JPEG$" />
+    <field name="slide7url" type="text" default="http://www.joohopia.com/joomla-modules/34-goboslide-module.html" label="Link for this image" description="Enter 'http://www.xxx.xxx'" size="52" />
+    <field name="slide8" type="imagelist" default="" label="Slideshow image #8" description="" directory="images" filter = "\.jpeg$|\.JPG$|\.jpg$|\.JPEG$" />
+    <field name="slide8url" type="text" default="http://www.joohopia.com/joomla-modules/34-goboslide-module.html" label="Link for this image" description="Enter 'http://www.xxx.xxx'" size="52" />
+    <field name="slide9" type="imagelist" default="" label="Slideshow image #9" description="" directory="images" filter = "\.jpeg$|\.JPG$|\.jpg$|\.JPEG$" />
+    <field name="slide9url" type="text" default="http://www.joohopia.com/joomla-modules/34-goboslide-module.html" label="Link for this image" description="Enter 'http://www.xxx.xxx'" size="52" />
+    <field name="slide10" type="imagelist" default="" label="Slideshow image #10" description="" directory="images" filter = "\.jpeg$|\.JPG$|\.jpg$|\.JPEG$" />
+    <field name="slide10url" type="text" default="http://www.joohopia.com/joomla-modules/34-goboslide-module.html" label="Link for this image" description="Enter 'http://www.xxx.xxx'" size="52" />
+    <field name="@spacer" type="spacer" default="" label="" description="" />
+  </fieldset></fields></config>
+</extension>

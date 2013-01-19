@@ -4417,7 +4417,11 @@
       <created>1358602833485</created>
       <updated>1358602833485</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial Commit">
+      <created>1358603361471</created>
+      <updated>1358603361471</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">

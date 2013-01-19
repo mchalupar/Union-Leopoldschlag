@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="system" method="upgrade">
+	<name>System - jQuery Library</name>
+	<author>Nguyen Dinh Luan</author>
+	<creationDate>December 2011</creationDate>
+	<copyright>Copyright (C) 2008 - 2011 Joomseller. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<authorEmail>admin@joomseller.com</authorEmail>
+	<authorUrl>www.joomseller.com</authorUrl>
+	<version>1.7.0</version>
+	<description>Add jQuery script to the site and resolve any conflict with Mootools scripts for Joomla 1.7</description>
+	<files>
+		<filename plugin="js_loadjquery">js_loadjquery.php</filename>
+		<filename plugin="js_loadjquery">index.html</filename>
+		<folder>libraries</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/plugins/system/js_loadjquery/libraries/elements">
+				<field
+					name="jquery_version"
+					type="version"
+					default=""
+					label="PLG_SYSTEM_ZJ_LOADJQUERY_JQUERY_VERSION"
+					description="PLG_SYSTEM_ZJ_LOADJQUERY_JQUERY_VERSION_DESC"
+					/>
+				<field
+					name="jconflict"
+					type="radio"
+					default="1"
+					label="PLG_SYSTEM_ZJ_LOADJQUERY_REMOVE_MOOTOOLS_CONFLICT"
+					description="PLG_SYSTEM_ZJ_LOADJQUERY_REMOVE_MOOTOOLS_CONFLICT_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field
+					name="addwhere"
+					type="list"
+					default="fontend"
+					label="PLG_SYSTEM_ZJ_LOADJQUERY_WHERE_TO_ADD"
+					description="PLG_SYSTEM_ZJ_LOADJQUERY_WHERE_TO_ADD_DESC">
+					<option value="frontend">Frontend</option>
+					<option value="backend">Backend</option>
+					<option value="both">Both</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_js_loadjquery.ini</language>
+	</languages>
+</extension>
