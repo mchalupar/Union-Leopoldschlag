@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade">
+	<name>Prismatic-for-Joomla-3.X</name>
+	<creationDate>October 2012</creationDate>
+	<author>Robin Jungermann - Crosstec GmbH &amp; Co. KG</author>
+	<copyright>Copyright © 2012 Robin Jungermann</copyright>
+        <licence>GNU/GPL 2.2</licence>
+	<authorEmail>info@crosstec.de</authorEmail>
+	<authorUrl>http://crosstec.de</authorUrl>
+	<version>1.0</version>
+        <description>Prismatic for Joomla! 3.X - an easy-to-use Joomla! website template</description>
+	
+	<files>
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>languages</folder>
+		<folder>sample_backgrounds</folder>
+		<folder>system</folder>
+		<folder>text_images_source</folder>
+		<folder>images_source</folder>
+		<folder>elements</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	
+	<languages folder="languages">
+		<language tag="en-GB">en-GB/en-GB.tpl_prismatic.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_prismatic.sys.ini</language>
+	</languages>
+	
+	<positions>
+            
+                <position>accordion-content</position>
+            
+		<position>searchHeader</position>
+		<position>loginHeader</position>
+		<position>mainNav</position>
+		
+		<position>highlights_1_1</position>
+		<position>highlights_1_2</position>
+		<position>highlights_1_3</position>
+		<position>highlights_1_4</position>
+		<position>highlights_1_5</position>
+		<position>highlights_1_6</position>
+		
+		<position>maincontent_1_1</position>
+		<position>maincontent_1_2</position>
+		<position>maincontent_1_3</position>
+		<position>maincontent_1_4</position>
+		<position>maincontent_1_5</position>
+		<position>maincontent_1_6</position>
+		
+		<position>maincontent_2_1</position>
+		<position>maincontent_2_2</position>
+		<position>maincontent_2_3</position>
+		<position>maincontent_2_4</position>
+		<position>maincontent_2_5</position>
+		<position>maincontent_2_6</position>
+		
+		<position>left</position>
+		<position>right</position>
+		
+		<position>footer_1_1</position>
+		<position>footer_1_2</position>
+		<position>footer_1_3</position>
+		<position>footer_1_4</position>
+		<position>footer_1_5</position>
+		<position>footer_1_6</position>
+		
+		<position>breadcrumbs</position>
+		
+		<position>slider</position>	
+		
+	</positions>
+	
+	<config>
+		<fields name="params" addpath="/templates/prismatic-for-joomla-3.x/elements" addfieldpath="/templates/prismatic-for-joomla-3.x/elements">
+			<fieldset name="advanced">
+				
+				<field name="logo" type="media"
+					label="Logo"
+					description="Upload a logo for the site header."/>
+										
+				<field name="max_sitewidth" type="text" size="10" default="960" 
+					label="Max Site Width" 
+					description="Set the maximum width of the site in pixels."
+					filter="int" />
+				
+				<field name="background_overlay" type="list" default="02" label="Background Overlay" description="Select a background style">
+					<option value="none">none</option>
+					<option value="01">01</option>
+					<option value="02">02</option>
+					<option value="03">03</option>
+					<option value="04">04</option>
+					<option value="05">05</option>
+					<option value="06">06</option>
+					<option value="07">07</option>
+					<option value="08">08</option>
+					<option value="09">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+     			</field>
+				
+				<field name="slideshow_speed" type="text" size="10" default="5000" 
+					label="Background Slideshow Delay" 
+					description="Set the time between the transitions in miliseconds."
+					filter="int" />
+					
+				<field name="slideshow_transition" type="text" size="10" default="1000" 
+					label="Background Transition Speed" 
+					description="Set the speed for the transitions between the slides in miliseconds."
+					filter="int" />
+
+				<field name="show_menu_text" type="input" default="Select a Page" 
+					label="'Show Menu' Button Text" 
+					description="Enter the text you want to appear first in the select-list navigation for small resolutions."
+				/>
+				
+				<field type="spacer" class="text" label="&lt;a href='http://crosstec.de/en/joomla-templates.html' target='_blank'&gt;&lt;b style='color:red;text-decoration: underline'&gt;Get this template with footer removal, color picker and more options from here!&lt;/b&gt;&lt;/a&gt;
+				
+				&lt;br&gt;&lt;br&gt;
+				
+				&lt;a href='http://crosstec.de/media/prismatic_for_joomla_3_docs.pdf' target='_blank'&gt;&lt;b style='color:red;text-decoration: underline'&gt;Click Here For Documentation.&lt;/b&gt;&lt;/a&gt;"
+				
+				 />
+
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>

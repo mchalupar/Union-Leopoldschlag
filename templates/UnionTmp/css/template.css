@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+html {
+    height: 100.2%;
+}
+
+body {
+    background-color: #e9f2fe;
+}
+
+/**** GRUNDGERÜST ****/
+#wrapper {
+    width: 980px;
+    margin: 20px auto;
+}
+
+
+/** kopfbereich **/
+#head {
+    position: relative;
+    width: 980px;
+    background-image: url(../../../images/header.jpg);
+    background-repeat: no-repeat;
+    height: 175px;
+}
+
+/** top-menu **/
+#mainnav {
+    position: relative;
+    background-color: #0AAA0A;
+    background-image: -moz-linear-gradient(top, #0AAA0A, #0A550A);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0AAA0A), to(#0A550A));
+    background-image: -webkit-linear-gradient(top, #0AAA0A, #0A550A);
+    background-image: -o-linear-gradient(top, #0AAA0A, #0A550A);
+    background-image: linear-gradient(to bottom, #0AAA0A, #0A550A);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0AAA0A', endColorstr='#0A550A', GradientType=0);
+    height: 40px;
+}
+
+.nav li {
+    float: left;
+    list-style: none;
+    list-style-type: none;
+    padding: 10px 25px;
+}
+
+.nav li a, .nav li a:link, .nav li a:hover, .nav li a:visited {
+    text-decoration: none;
+    text-transform: none;
+    color: #FFFFEE;
+}
+.nav li:first-child  {
+
+}
+.nav li:last-child  {
+
+}
+
+#content {
+   position: relative;
+}
+
+#component {
+    position: relative;
+    float: left;
+    width: 700px;
+}
+#sidebar {
+    position: relative;
+    float: left;
+    width: 280px;
+}

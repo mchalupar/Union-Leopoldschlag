@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>Interpunkt</name>
+	<creationDate>Nov 2012</creationDate>
+	<author>Pixelianer</author>
+	<authorEmail>info@pixelianer.de</authorEmail>
+	<authorUrl>http://www.pixelianer.com</authorUrl>
+	<copyright></copyright>
+	<license>GNU/GPL</license>
+	<version>2.0.0</version>
+	<description>For Support please visit Pixelianer.com</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>favicon.ico</filename>
+		<folder>assets</folder>
+		<folder>html</folder>
+	</files>
+	<positions>
+		<position>left</position>
+		<position>right</position>
+		<position>menu</position>
+        <position>top-menu</position>
+        <position>sub-menu</position>
+		<position>top</position>
+		<position>footer</position>
+		<position>breadcrumbs</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_interpunkt.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="templates/interpunkt/admin/elements">>
+			<fieldset name="basic">
+				<field name="template-width" type="radio" default="0" label="Template Width" description="Choose the width of your template">
+					<option value="0">Static</option>
+					<option value="1">Fluid</option>
+				</field>
+				<field name="columnWidth" type="list" default="3" label="Column Width" description="Choose a width for your left and right columns">
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</field>
+			</fieldset>
+			<fieldset name="SLIDE1">
+				<field name="slide_1_image" type="imagelist" default="" label="Select your slide image" description="" directory="/images/slides/" exclude="" stripext="" />
+				<field name="slide_1_titel" type="text" default="" label="Titel" description="Enter yoir titel" filter="raw" />
+				<field name="slide_1_text" type="textarea" default="default" label="Enter some text" description="" rows="5" cols="10" filter="raw"/>
+			</fieldset>
+			<fieldset name="SLIDE2">
+				<field name="slide_2_image" type="imagelist" default="" label="Select your slide image" description="" directory="/images/slides/" exclude="" stripext="" />
+				<field name="slide_2_titel" type="text" default="" label="Titel" description="Enter yoir titel" filter="raw" />
+				<field name="slide_2_text" type="textarea" default="default" label="Enter some text" description="" rows="5" cols="10" filter="raw"/>
+			</fieldset>
+			<fieldset name="SLIDE3">
+				<field name="slide_3_image" type="imagelist" default="" label="Select your slide image" description="" directory="/images/slides/" exclude="" stripext="" />
+				<field name="slide_3_titel" type="text" default="" label="Titel" description="Enter yoir titel" filter="raw" />
+				<field name="slide_3_text" type="textarea" default="default" label="Enter some text" description="" rows="5" cols="10" filter="raw"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

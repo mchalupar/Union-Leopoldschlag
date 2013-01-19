@@ -1,0 +1,1 @@
+var xquery = jQuery.noConflict();
