@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>SimpleCalendar Groups</name>
+  <author>Fabrizio Albonico</author>
+  <version>0.1</version>
+  <description>SimpleCalendar Groups</description>
+  <reference>
+	<table name="simplecal_groups">
+		<field type="referenceid" name="groupID" translate="0">ID</field>
+		<field type="titletext" name="groupName" translate="1">Name</field>
+		<field type="text" name="groupAbbr" translate="1">Abbreviation</field>
+		<field type="text" name="alias" translate="1">Alias</field>
+	</table>
+  </reference>
+</joomfish>

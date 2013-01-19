@@ -1,0 +1,62 @@
+/**
+ * @version 1.0 $Id: tabs.css,v 1.1 2009/03/14 08:05:21 fabrizio Exp $
+ * @package Joomla
+ * @subpackage SimpleCalendar
+ * @copyright (C) 2008 - 2009 Fabrizio Albonico
+ * @license GNU/GPL, see LICENCE.php
+ * EventList is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License 3
+ * as published by the Free Software Foundation.
+
+ * SimpleCal is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with SimpleCalendar; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ 
+ **/
+ 
+p.member {
+	font-size: 16px;
+	text-decoration: none; 	
+}
+
+dl.tabs {
+	float: left;
+	margin: 10px 0pt -1px;
+	z-index: 50; 
+}
+
+dl.tabs dt {
+	background: #F0F0F0 none repeat scroll 0%;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+	color: #666666;
+	float: left;
+	margin-left: 3px;
+	padding: 4px 10px;
+}
+
+dl.tabs dt.open {
+	background: #F9F9F9 none repeat scroll 0%;
+	border-bottom: 1px solid #F9F9F9;
+	color: #000000;
+	z-index: 100;
+}
+
+div.current {
+	border: 1px solid #CCCCCC;
+	clear: both;
+	padding: 6px;
+}
+
+div.current dd {
+	margin: 0px;
+	padding: 0px;
+	width: 95%;
+}
+

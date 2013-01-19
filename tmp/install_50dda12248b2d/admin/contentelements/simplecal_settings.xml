@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>SimpleCalendar Settings</name>
+  <author>Fabrizio Albonico</author>
+  <version>0.2</version>
+  <description>SimpleCalendar Groups</description>
+  <reference>
+	<table name="simplecal_settings">
+		<field type="referenceid" name="id" translate="0">ID</field>
+		<field type="HTMLtext" name="intro_text" translate="1">Intro text</field>
+		<field type="HTMLtext" name="custom1_label" translate="1">Custom 1 label</field>
+		<field type="HTMLtext" name="custom2_label" translate="1">Custom 2 label</field>
+	</table>
+  </reference>
+</joomfish>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Calendar list layout">
+		<message>
+			<![CDATA[Calendar list layout]]>
+		</message>
+	</layout>
+	<state>
+		<name>Calendar list layout</name>
+		<description>Calendar list layout</description>
+		<params addpath="/administrator/components/com_simplecalendar/classes" >
+			<param name="catid" type="multilist" default="0" label="Select Category" description="SELECT CATEGORY DESC" />
+			<param name="order" type="list" default="date" label="Display order" description="Select the order you want the items to display">
+				<option value="date">by date</option>
+				<option value="category">by category</option>
+			</param>
+			<param name="show_only_future_events" type="list" default="1" label="Show events from" description="Show events from">
+				<option value="0">Past</option>
+				<option value="1">Future</option>
+				<option value="2">Past and future</option>
+			</param>
+			<param name="reverse_sort_order" type="radio" default="0" label="Reverse sort order" description="Reverse sort order">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="intro_text" type="textarea" default="" label="Intro text" description="Optional introductory text that will be printed before the calendar" rows="6" cols="40" />
+		</params>
+	</state>
+</metadata>

@@ -1,0 +1,63 @@
+/**
+ *	com_simplecalendar - a simple calendar component for Joomla 1.5
+ *  Copyright (C) 2008-2010 Fabrizio Albonico
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *	(at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+ 
+ =================================
+ C R E D I T S
+ =================================
+ Many thanks to:
+ * GMapsOverlay v1.0 JavaScript by André Fiedler (http://www.visualdrugs.net) - GNU license.
+ * Map icon by IconDrawer (Eugen Buzuk) http://www.icondrawer.com - free for non-commercial use
+ * Christoph Lukes (schlu.net) for the inspiring EventList component.
+ * K_CrossControl_v2 by Doug Henderson, released under Creative Commons Attrib 2.5 License (http://www3.telus.net/DougHenderson/K_CrossDemo.html
+ * JSColor color picker Javascript script by Honza Odvarko (http://jscolor.com/), released under LGPL licence.
+ * Many bug fixes by 'lostsoul'
+ * Silk Icon Set by Mark James (http://www.famfamfam.com/), released under Creative Commons Attribution 2.5 License.
+ 
+ =================================
+ T R A N S L A T I O N S
+ =================================
+ Many thanks to:
+ * Philip Nitelet for the dutch (nl-NL) and french (fr-FR) translation (also "lutin57" and "maffeaffe")
+ * BigJens - www.slowpitch.de - and Olli MVN for the german (de-DE) translation
+ * Cecilia for the spanish (es-ES) translation 
+ * Lazlo Torma for the hungarian (hu-HU) translation
+ * Jussi for the swedish (sv-SE) translation
+ * DaBouncer for the norvegian (nb-NO) translation
+ * Nuno Pereira for the portuguese (pt-PT) translation
+ * Vasilije Mehandzic for the serbian (sr-SR and sr-YU) translations (frontend only)
+ * Bart Van Turnhout for improving onf the dutch (nl-NL) translation.
+ 
+ =================================
+ C O P Y R I G H T   N O T I C E S
+ =================================
+ Please do not remove the copyright notice at the bottom of every page. If you
+ *really* need to remove them, please contact me beforehand through my website. 
+ The "Donation" line can be toggled on/off from the backend parameters. Feel
+ free to remove it, but consider a small donation to the author for the
+ time spent on providing you this component.
+ Thank you in advance! 
+ 
+ =================================
+ T H E   A U T H O R
+ =================================
+ This component is brought to you for free by Fabrizio Albonico (c) 2009
+ Main site: 	 http://software.albonico.ch/
+ Support forum:  http://software.albonico.ch/phpBB/
+ Donations are accepted in any form. Please see the website for further detail.
+ 
+ 

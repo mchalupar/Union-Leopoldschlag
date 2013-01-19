@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Calendar - add/edit event">
+		<message>
+			<![CDATA[CALENDAR FORM DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>Calendar - add/edit event</name>
+		<description>Calendar - add/edit event</description>
+	</state>
+</metadata>

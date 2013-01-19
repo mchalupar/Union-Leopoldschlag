@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="module" method="upgrade">
+	<name>Art Total Menu</name>
+	<author>Artetics</author>
+	<creationDate>October 2009</creationDate>
+	<copyright>Artetics</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@artetics.com</authorEmail>
+	<authorUrl>www.artetics.com.com</authorUrl>
+	<version>1.6.1</version>
+	<description>Art Total Menu display menus of various types</description>
+	<files>
+		<filename module="mod_arttotalmenu">mod_arttotalmenu.php</filename>
+		<filename>mod_arttotalmenu/helpers/artmenuhelper.php</filename>
+		<filename>mod_arttotalmenu/library/json/json.php</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/fg.menu.css</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/ui.accordion.css</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/ui.all.css</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/ui.base.css</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/ui.core.css</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/ui.datepicker.css</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/ui.dialog.css</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/ui.progressbar.css</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/ui.resizable.css</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/ui.slider.css</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/ui.tabs.css</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/ui.theme.css</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/images/ui-bg_diagonals-small_100_f0efea_40x40.png</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/images/ui-bg_flat_35_f0f0f0_40x100.png</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/images/ui-bg_glass_55_fcf0ba_1x400.png</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/images/ui-bg_glow-ball_25_2e2e28_600x600.png</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/images/ui-bg_highlight-soft_100_f0efea_1x100.png</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/images/ui-bg_highlight-soft_25_327E04_1x100.png</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/images/ui-bg_highlight-soft_25_5A9D1A_1x100.png</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/images/ui-bg_highlight-soft_95_ffedad_1x100.png</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/images/ui-bg_inset-soft_22_3b3b35_1x100.png</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/images/ui-icons_808080_256x240.png</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/images/ui-icons_8DC262_256x240.png</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/images/ui-icons_cd0a0a_256x240.png</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/images/ui-icons_e7e6e4_256x240.png</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/images/ui-icons_eeeeee_256x240.png</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/css/theme/images/ui-icons_ffffff_256x240.png</filename>
+		<filename>mod_arttotalmenu/showtype/ipod/js/fg.menu.js</filename>
+		<filename>mod_arttotalmenu/showtype/js/jquery-1.3.2.min.js</filename>
+		<filename>mod_arttotalmenu/showtype/js/jquery.nc.js</filename>
+		<filename>mod_arttotalmenu/showtype/simple/css/style.css</filename>
+		<filename>mod_arttotalmenu/showtype/simple/images/overlay.png</filename>
+		<filename>mod_arttotalmenu/showtype/simple/images/overlay2.png</filename>
+		<filename>mod_arttotalmenu/showtype/simple/js/jquery.dropdownplain.js</filename>
+		<filename>mod_arttotalmenu/showtype/css3/css/style.css</filename>
+		<filename>mod_arttotalmenu/showtype/css3/images/gradient.png</filename>
+		<filename>mod_arttotalmenu/templates/ipod.html.php</filename>
+		<filename>mod_arttotalmenu/templates/simple.html.php</filename>
+		<filename>mod_arttotalmenu/templates/css3.html.php</filename>
+	</files>
+	<params>
+    <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix" />
+		<param name="menuType" type="mos_menu" default="mainmenu" label="Menu" description="Menu" />
+		<param name="showType" type="list" default="ipod" label="Menu type" description="Menu type">
+	      <option value="ipod">ipod</option>
+	      <option value="simple">simple</option>
+	      <option value="CSS3">CSS3</option>
+		</param>
+    <param name="menuLabel" type="text" default="Menu" label="Menu label" description="Menu label" />
+    <param name="backLinkText" type="text" default="Back" label="Back button label" description="Back button label" />
+	<param name="loadJQuery" type="list" default="1" label="Load jQuery library" description="Load jQuery javascript library? Choose no if it is always included in your pages">
+	  <option value="1">yes</option>
+	  <option value="0">no</option>
+	</param>
+	</params>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix" />
+        <field name="menuType" type="mos_menu" default="mainmenu" label="Menu" description="Menu" />
+        <field name="showType" type="list" default="ipod" label="Menu type" description="Menu type">
+            <option value="ipod">ipod</option>
+            <option value="simple">simple</option>
+            <option value="CSS3">CSS3</option>
+        </field>
+        <field name="menuLabel" type="text" default="Menu" label="Menu label" description="Menu label" />
+        <field name="backLinkText" type="text" default="Back" label="Back button label" description="Back button label" />
+        <field name="loadJQuery" type="list" default="1" label="Load jQuery library" description="Load jQuery javascript library? Choose no if it is always included in your pages">
+          <option value="1">yes</option>
+          <option value="0">no</option>
+        </field>
+      </fieldset>
+    </fields>
+	</config>
+</install>

@@ -1,0 +1,5 @@
+-- DROP TABLE IF EXISTS `#__simplecal`;
+-- DROP TABLE IF EXISTS `#__simplecal_categories`;
+-- DROP TABLE IF EXISTS `#__simplecal_groups`;
+-- DROP TABLE IF EXISTS `#__simplecal_settings`;
+-- DROP TABLE IF EXISTS `#__simplecal_statuses`;

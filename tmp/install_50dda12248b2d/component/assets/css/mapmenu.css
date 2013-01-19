@@ -1,0 +1,26 @@
+div#scmap_menu_container {
+	float: right;
+	clear: right;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+}
+
+div#scmap_menu_links {
+	width: 190px;
+	height:70px;
+	text-align: right;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right: 5px;
+	border:#CCCCCC solid 1px;
+	z-index: 1;
+}
+
+div#scmap_menu { 
+	float: right;
+	width: 200px;
+	font-size: 12px;
+	text-align: right;
+	cursor: pointer;
+}

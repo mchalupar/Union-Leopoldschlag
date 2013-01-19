@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<params>
+		<param name="display_num" type="list" default="25" label="Number of events shown" description="Number of events shown in the list view">
+			<option value="5">5</option>
+			<option value="10">10</option>
+			<option value="15">15</option>
+			<option value="20">20</option>
+			<option value="25">25</option>
+			<option value="30">30</option>
+			<option value="50">50</option>
+			<option value="0">All</option>
+		</param>
+		<param name="linkToPDF" type="radio" default="1" label="PDF" description="SHOW_PDF_ICON">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="linkToEMail" type="radio" default="1" label="E-Mail" description="SHOW_EMAIL_ICON">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="linkToPrint" type="radio" default="1" label="Print" description="SHOW_PRINT_ICON">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="linkToVCal" type="radio" default="1" label="iCal/vCal" description="SHOW_vCAL-iCAL_ICON">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="linkToRSS" type="radio" default="0" label="RSS Syndication" description="SHOW_SYNDICATION_ICON">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="linkToAtom" type="radio" default="0" label="Atom Syndication" description="SHOW_SYNDICATION_ICON">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</root>

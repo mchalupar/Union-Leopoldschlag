@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>SimpleCalendar Categories</name>
+  <author>Fabrizio Albonico</author>
+  <version>0.1</version>
+  <description>SimpleCalendar Categories</description>
+  <reference>
+	<table name="simplecal_categories">
+		<field type="referenceid" name="categoryID" translate="0">ID</field>
+		<field type="titletext" name="categoryName" translate="1">Name</field>
+		<field type="text" name="alias" translate="1">Alias</field>		
+		<field type="text" name="ordering" translate="0">Ordering</field>  		
+	</table>
+  </reference>
+</joomfish>

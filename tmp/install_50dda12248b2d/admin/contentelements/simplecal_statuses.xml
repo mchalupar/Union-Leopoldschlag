@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>SimpleCalendar Statuses</name>
+  <author>Fabrizio Albonico</author>
+  <version>0.1</version>
+  <description>SimpleCalendar Statuses</description>
+  <reference>
+	<table name="simplecal_statuses">
+		<field type="referenceid" name="statusID" translate="0">ID</field>
+		<field type="titletext" name="status_description" translate="1">Status description</field>
+		<field type="text" name="alias" translate="1">Alias</field>
+	</table>
+  </reference>
+</joomfish>

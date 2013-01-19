@@ -1,0 +1,1 @@
+var atmjQuery = jQuery;jQuery.noConflict();

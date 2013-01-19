@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>SimpleCalendar Events</name>
+  <author>Fabrizio Albonico</author>
+  <version>0.1</version>
+  <description>SimpleCalendar Events</description>
+  <reference>
+	<table name="simplecal">
+		<field type="referenceid" name="id" translate="0">ID</field>
+		<field type="titletext" name="entryName" translate="1">Entry Name</field>
+		<field type="text" name="entryPlace" translate="1">Entry Place</field>
+		<field type="text" name="entryAddress" translate="1">Entry Address</field>
+		<field type="text" name="alias" translate="1">Alias</field>
+		<field type="text" name="price" translate="1">Price</field>
+		<field type="HTMLtext" name="entryInfo" translate="1">Entry Information</field>
+	</table>
+  </reference>
+</joomfish>

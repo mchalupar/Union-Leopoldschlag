@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Calendar detail desc">
+		<message>
+			<![CDATA[CALENDAR DETAIL DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>Calendar Detail desc</name>
+		<description />
+		<url addpath="/administrator/components/com_simplecalendar/classes">
+			<param name="id" type="sql" default="0" label="Select an entry" query="SELECT id, entryName, date1, CONCAT('(', date1, ') ', entryName) AS value FROM #__simplecal WHERE date1 > NOW() AND published = '1' ORDER BY date1" key_field="id" value_field="value" />	
+		</url>
+	</state>
+</metadata>

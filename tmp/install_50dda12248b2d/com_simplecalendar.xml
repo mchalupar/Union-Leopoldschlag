@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<install type="component" version="1.5.0" method="upgrade">
+	<name>SimpleCalendar</name>
+	<creationDate>August 23, 2011</creationDate>
+	<author>Fabrizio Albonico</author>
+	<authorEmail>software@albonico.ch</authorEmail>
+	<authorUrl>http://software.albonico.ch/</authorUrl>
+	<copyright>(c) 2008-2011 All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>0.8.13a</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>
+		<![CDATA[
+			<p>Basic and easy-to-use Event management component.<br/>
+   			(c) 2008-2011 Fabrizio Albonico</p>
+   			<p>THIS IS A BETA VERSION!</p>
+   		]]>
+	</description>
+
+	<installfile>install.simplecalendar.php</installfile>
+	<uninstallfile>uninstall.simplecalendar.php</uninstallfile>
+
+	<!-- installs and executes SQL scripts -->
+	 <install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.simplecalendar.utf8.sql</file>
+			<file driver="mysql">install.simplecalendar.nonutf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.simplecalendar.utf8.sql</file>
+			<file driver="mysql">uninstall.simplecalendar.nonutf8.sql</file>
+		</sql>
+	</uninstall>
+	
+	<!-- installs frontend (component) files -->
+	<files folder="component">
+		<filename>index.html</filename>
+		<filename>simplecalendar.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<folder>models</folder>
+		<folder>classes</folder>
+		<folder>assets</folder>
+		<folder>views</folder>
+		<folder>helpers</folder>	
+	</files>
+
+	<languages folder="admin/lang">
+		<language tag="en-GB">en-GB.com_simplecalendar.ini</language>
+		<language tag="en-US">en-US.com_simplecalendar.ini</language>
+		<language tag="it-IT">it-IT.com_simplecalendar.ini</language>
+		<language tag="it-IT">it-IT.com_simplecalendar.menu.ini</language>
+		<language tag="nl-NL">nl-NL.com_simplecalendar.ini</language>
+		<language tag="nl-NL">nl-NL.com_simplecalendar.menu.ini</language>
+		<language tag="fr-FR">fr-FR.com_simplecalendar.ini</language>
+		<language tag="fr-FR">fr-FR.com_simplecalendar.menu.ini</language>
+		<language tag="de-DE">de-DE.com_simplecalendar.ini</language>
+		<language tag="de-DE">de-DE.com_simplecalendar.menu.ini</language>
+		<language tag="es-ES">es-ES.com_simplecalendar.ini</language>
+		<language tag="es-ES">es-ES.com_simplecalendar.menu.ini</language>
+		<language tag="hu-HU">hu-HU.com_simplecalendar.ini</language>
+		<language tag="hu-HU">hu-HU.com_simplecalendar.menu.ini</language>
+		<language tag="sv-SE">sv-SE.com_simplecalendar.ini</language>
+		<language tag="sv-SE">sv-SE.com_simplecalendar.menu.ini</language>
+		<language tag="nb-NO">nb-NO.com_simplecalendar.ini</language>
+		<language tag="nb-NO">nb-NO.com_simplecalendar.menu.ini</language>
+		<language tag="cs-CZ">cs-CZ.com_simplecalendar.ini</language>
+		<language tag="cs-CZ">cs-CZ.com_simplecalendar.menu.ini</language>
+		<language tag="sr-RS">sr-RS.com_simplecalendar.ini</language>
+		<language tag="sr-RS">sr-RS.com_simplecalendar.menu.ini</language>
+		<language tag="sr-YU">sr-YU.com_simplecalendar.ini</language>
+		<language tag="pt-PT">pt-PT.com_simplecalendar.ini</language>
+		<language tag="pt-PT">pt-PT.com_simplecalendar.menu.ini</language>
+		<language tag="ca-ES">ca-ES.com_simplecalendar.ini</language>
+		<language tag="he-IL">he-IL.com_simplecalendar.ini</language>
+		<language tag="he-IL">he-IL.com_simplecalendar.menu.ini</language>
+		<language tag="pl-PL">pl-PL.com_simplecalendar.menu.ini</language>
+	</languages>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="../components/com_simplecalendar/assets/images/logo_sc_16.png">SimpleCalendar</menu>
+		<submenu>
+			<!-- Note that all & must be escaped to &amp; for the file to be valid XML and be parsed by the installer -->
+			<menu img="../components/com_simplecalendar/assets/images/calendar.png" link="option=com_simplecalendar&amp;controller=calendar&amp;view=calendar">Calendar</menu>
+			<menu img="../components/com_simplecalendar/assets/images/category.png" link="option=com_simplecalendar&amp;controller=category&amp;view=categories">Categories</menu>
+			<menu img="../components/com_simplecalendar/assets/images/status.png" link="option=com_simplecalendar&amp;controller=status&amp;view=statuses">Event Statuses</menu>
+			<menu img="../components/com_simplecalendar/assets/images/group.png" link="option=com_simplecalendar&amp;controller=group&amp;view=groups">Groups</menu>
+			<menu img="../components/com_simplecalendar/assets/images/email_go.png" link="option=com_simplecalendar&amp;controller=invitations&amp;view=invitations">E-mail Invitations</menu>
+			<menu img="../components/com_simplecalendar/assets/images/settings.png" link="option=com_simplecalendar&amp;controller=settings&amp;task=edit">Settings</menu>
+		</submenu>
+		<!-- Administration Main File Copy Section -->
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>admin.simplecalendar.php</filename>
+			<filename>controller.php</filename>
+			<filename>com_simplecalendar_LICENSE.txt</filename>
+			<filename>config.xml</filename>
+			<!-- install controllers -->
+			<folder>controllers</folder>
+			<!-- install models  -->
+			<folder>models</folder>
+			<!-- install helper files  -->
+			<folder>assets</folder>
+			<!-- install views -->
+			<folder>views</folder>
+			<!-- install table definitions-->
+			<folder>tables</folder>
+			<!-- install classes and overrides -->
+			<folder>classes</folder>
+			<!-- install Joomfish content elements-->
+			<folder>contentelements</folder>
+			<!-- install plugins -->
+			<folder>plugins</folder>
+			<!-- database script -->
+			<filename>install.simplecalendar.utf8.sql</filename>
+			<filename>install.simplecalendar.nonutf8.sql</filename>
+			<filename>uninstall.simplecalendar.utf8.sql</filename>
+			<filename>uninstall.simplecalendar.nonutf8.sql</filename>
+		</files>
+
+		<!-- Administration Language File Copy Section -->
+		<languages folder="admin/lang">
+			<language tag="en-GB">en-GB.com_simplecalendar.ini</language>
+			<language tag="en-US">en-US.com_simplecalendar.ini</language>
+			<language tag="it-IT">it-IT.com_simplecalendar.ini</language>
+			<language tag="it-IT">it-IT.com_simplecalendar.menu.ini</language>
+			<language tag="nl-NL">nl-NL.com_simplecalendar.ini</language>
+			<language tag="nl-NL">nl-NL.com_simplecalendar.menu.ini</language>
+			<language tag="fr-FR">fr-FR.com_simplecalendar.ini</language>
+			<language tag="fr-FR">fr-FR.com_simplecalendar.menu.ini</language>
+			<language tag="de-DE">de-DE.com_simplecalendar.ini</language>
+			<language tag="de-DE">de-DE.com_simplecalendar.menu.ini</language>
+			<language tag="es-ES">es-ES.com_simplecalendar.ini</language>
+			<language tag="es-ES">es-ES.com_simplecalendar.menu.ini</language>
+			<language tag="hu-HU">hu-HU.com_simplecalendar.ini</language>
+			<language tag="hu-HU">hu-HU.com_simplecalendar.menu.ini</language>
+			<language tag="sv-SE">sv-SE.com_simplecalendar.ini</language>
+			<language tag="sv-SE">sv-SE.com_simplecalendar.menu.ini</language>
+			<language tag="nb-NO">nb-NO.com_simplecalendar.ini</language>
+			<language tag="nb-NO">nb-NO.com_simplecalendar.menu.ini</language>
+			<language tag="cs-CZ">cs-CZ.com_simplecalendar.ini</language>
+			<language tag="cs-CZ">cs-CZ.com_simplecalendar.menu.ini</language>
+			<language tag="sr-RS">sr-RS.com_simplecalendar.ini</language>
+			<language tag="sr-RS">sr-RS.com_simplecalendar.menu.ini</language>
+			<language tag="sr-YU">sr-YU.com_simplecalendar.ini</language>
+			<language tag="pt-PT">pt-PT.com_simplecalendar.ini</language>
+			<language tag="pt-PT">pt-PT.com_simplecalendar.menu.ini</language>
+			<language tag="ca-ES">ca-ES.com_simplecalendar.ini</language>
+			<language tag="he-IL">he-IL.com_simplecalendar.ini</language>
+			<language tag="he-IL">he-IL.com_simplecalendar.menu.ini</language>	
+		</languages>
+	</administration>
+</install>
+
+

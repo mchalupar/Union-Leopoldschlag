@@ -1,0 +1,172 @@
+/**
+ * @version 1.0 $Id: simplecal_front.css,v 1.13 2009/11/18 04:12:24 fabrizio Exp $
+ * @package Joomla
+ * @subpackage SimpleCalendar
+ * @copyright (C) 2008 - 2009 Fabrizio Albonico
+ * @license GNU/GPL, see LICENCE.php
+ * SimpleCalendar is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License 3
+ * as published by the Free Software Foundation.
+
+ * SimpleCalendar is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with SimpleCalendar; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ 
+ **/
+ 
+table#sc_form td {
+	padding: 3px;
+}
+
+div#content {
+	/* display: block; */
+	/* overflow: hidden; */ /* beez */	
+	/*padding: 0 20px 0 40px;*/
+	/*width: 100%;*/
+}
+
+.buttons{
+	margin-top: 0px;
+	float: right;
+}
+.buttons img { 
+	border: none;
+}
+
+.buttons a {
+	padding: 0 0 0 5px; height: 16px; line-height: 16px;
+}
+
+.additional_info h2 {
+	font-size: 10px;
+    /*font-weight: bold;*/
+}
+
+dl.sc_detail {
+	margin: 0 5px;
+	margin-bottom: 15px;
+}
+
+dt.sc_detail {
+	/* margin-right: 5px; */
+	padding: 0.3em 0;
+	float:left;
+	font-size: 1em;
+	font-style: italic;
+	width: 12em;
+	background: transparent;
+	border-bottom: 1px solid #ddd;
+}
+
+dd.sc_detail {
+	display: block;
+	margin: 0 0 5px 13.5em;
+	padding: 0.3em 0;
+	font-size: 1em;
+	background: transparent;
+	z-index: 10;
+}
+
+table {
+	border-collapse: collapse; 
+}
+
+table.sc_search {
+	margin: 1px;
+	font-size: 0.9em;
+}
+
+td.sc_header {
+	border-bottom: 1px solid black;
+	margin-bottom: 2px;
+}
+
+td.sc_rows {
+	border-bottom: 1px dotted lightgrey;
+}
+
+button.sc_search {
+	font-size: 0.9em;
+	margin: 0.9em 0;	
+}
+
+div .sc-footer {
+	font-size: 80%;
+	text-align: left;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	color: #aaa;
+}
+
+.map_icon {
+	float: right;
+	clear: right;
+}
+
+.unpublished {
+	color: red;
+}
+
+div#gmap_buttons {
+	margin: 5px;
+	padding-top: 10px;
+}
+
+div#gmap_buttons .save {
+	border: 1px solid lightgrey;
+	padding: 5px;
+}
+
+div#gmap_buttons .save:hover {
+	background-color: #ffee00;
+	cursor: pointer;
+}
+
+span.gmap_set {
+	border: 1px solid lightgrey;
+	background-image: url("../images/map_pointer.png");
+	background-repeat: no-repeat;
+	padding: 4px 4px 4px 20px;
+}
+
+span.gmap_set:hover {
+	background-color: #B8CDDC;
+	cursor: pointer;
+} 
+
+span.gmap_remove {
+	border: 1px solid lightgrey;
+	padding: 4px 4px 4px 4px;
+}
+
+span.gmap_remove:hover {
+	background-color: #B8CDDC;
+	cursor: pointer;
+} 
+
+span#entryinfo {
+	margin: 0 10px;
+	width: 98%;
+}
+
+span.gmaplink {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+th.sc_column_header {
+	font-style: italic;
+}
+
+p.category_colors {
+	border: 1px solid lightgrey;
+	font-size: 10px;
+	margin-left: 5px;
+	width: 98%;
+	padding: 2px 2px 2px 5px;
+}
