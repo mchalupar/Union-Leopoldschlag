@@ -1,0 +1,192 @@
+/**
+ * @version		$Id: $
+ * @author		Nguyen Dinh Luan
+ * @package		Joomla!
+ * $subpackage	OJ Dropline Menu
+ * @copyright	Copyright (C) 2008 - 2011 Joomseller Solutions. All rights reserved.
+ * @license		GNU/GPL http://www.gnu.org/licenses/gpl-3.0.html, see LICENSE.txt
+ * This file may not be redistributed in whole or significant part.
+ */		
+
+img {
+	behavior:url(png_behavior.htc);
+}
+
+img{
+	border:none;
+	}
+	
+#header {
+	z-index:20;
+}
+
+/* menu div setup */
+ #menu {
+ 	width:980px;
+ 	height:51px;
+ 	font-size:12px;
+ 	position:relative;
+ 	overflow:hidden;
+ 	
+ }
+ 
+#menu ul.dropline_menu {
+	width: 100%;
+	float: left;
+	background-color: #fff;
+	position: relative;
+}
+ 
+ /* Set the styles for all menu ul */
+ #menu ul, #menu li {
+ 	list-style:none outside;
+ 	margin:0px;
+ 	padding:0px;
+ }
+ 
+ /* Float the menu titles to the left side */
+ .menuArea, .menuAreaCurrent {
+	float:left;
+ }
+	
+
+
+/* To position the sub menu item lists by their parent and make them not expand the parent item */
+.subItems, .subItemsRight  {
+	position:absolute;
+	visibility:hidden; 
+}
+
+
+/* the left side sub item ul */
+.subItems {
+	left:0px;
+	width:980px;
+}
+
+/* the right side subitem ul */
+.subItemsRight {
+	width:980px;
+}
+
+/* Standard left side menu area sub items */
+.subItems li {
+	float:left
+}
+
+/* CSS hover to provide access for non javascript browsers */
+#menu li:hover .subItems, #menu li:hover .subItemsRight {
+	visibility:visible;
+}
+
+/* sub item link normal state */
+#menu .subItems a, #menu .subItemsRight a {
+	padding:4px 17px 5px 0px;
+	color:#465B77;
+	display:block;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+
+/* Sub item link hover state */
+#menu .subItems a:hover, #menu .subItemsRight a:hover {
+	color:#000;
+}
+
+
+/* Menu area titles */			
+#menu a.mainItem {
+	padding:2px 10px;
+	display:block;
+ 	text-decoration:none;
+ 	color:#465B77;
+ 	background-color:#fff;
+ 	text-align:left;
+ 	margin:0px;
+	line-height: 20px;
+}
+ 
+ 
+ 
+/* The title of the menu area, selected by both the css and js actions */
+#menu .menuAreaCurrent a.mainItem, #menu li:hover a.mainItem {
+   	background-color:#fff;
+    color:#A1B4CE;
+ 	font-weight:bold;
+}
+
+
+/* Once the js changes the class name of a menu area to menuAreaCurrent these rules will kick in */
+#menu .menuAreaCurrent .subItems, #menu .menuAreaCurrent .subItemsRight {
+	visibility:visible; 
+} 
+
+#menu #menuItemCurrent a{
+	color:#A1B4CE;
+	font-weight:bold;
+}
+
+
+/* sub item link normal state */
+#menu .subItems a, #menu .subItemsRight a {
+	color:#006699; 
+}
+
+
+
+/* Sub item link hover state */
+#menu .subItems a:hover, #menu .subItemsRight a:hover {
+	color:#555;
+}
+
+
+/* Menu area titles */			
+#menu a.mainItem {
+    color: #555;
+}
+ 
+ 
+/* The title of the menu area, selected by both the css and js actions */
+#menu .menuAreaCurrent a.mainItem, #menu li:hover a.mainItem {
+    color:#006699;
+}
+
+
+#menu #menuItemCurrent a{
+	color:#555;
+}
+
+
+/* Background div behind the sub items */
+#menuSubBackground {
+ 	position:absolute;
+ 	top:30px;
+ 	left:0px;
+ 	width:980px;
+ 	height:25px;
+ }
+
+
+/* Fade Styles */
+
+/* If the user has no javascript we skip the whole thing and don't display the fade div */
+/* Should be set the same or sim to the menuSubBackground above */
+#menuFade {
+	visibility:hidden;
+	position:absolute;
+	top:23px;
+	left:0px;
+	background-color:#fff;
+	height:22px;
+	width:980px;
+}
+
+
+/* opacity classes */
+.opacity0   {	-moz-opacity:0.0; opacity:0.0; filter:alpha(opacity=00); }
+.opacity20  {	-moz-opacity:0.2; opacity:0.2; filter:alpha(opacity=20); }
+.opacity40  {	-moz-opacity:0.4; opacity:0.4; filter:alpha(opacity=40); }
+.opacity60  {	-moz-opacity:0.6; opacity:0.6; filter:alpha(opacity=60); }
+.opacity80  {	-moz-opacity:0.8; opacity:0.8; filter:alpha(opacity=80); }
+.opacity100 {	-moz-opacity:1.0; opacity:0.8; filter:alpha(opacity=100);}

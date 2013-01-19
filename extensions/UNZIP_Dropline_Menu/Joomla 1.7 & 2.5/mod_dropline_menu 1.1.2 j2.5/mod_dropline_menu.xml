@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" method="upgrade">
+	<name>DropLine Menu</name>
+	<author>Joomseller!</author>
+	<creationDate>January 2012</creationDate>
+	<copyright>Copyright (C) 2008-2011 Joomseller Solutions! All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl.html GNU/GPL, SEE LICENSE.txt</license>
+	<authorEmail>admin@joomseller.com</authorEmail>
+	<authorUrl>http://www.joomseller.com</authorUrl>
+	<version>1.1.2</version>
+	<description>Joomseller Solutions! DropLine Menu For Joomla 1.7</description>
+	<files>
+		<filename module="mod_dropline_menu">mod_dropline_menu.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl/</folder>
+		<folder>assets/</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="menutype" type="menu" default="mainmenu" label="Menu Name" description="The name of the menu (default is mainmenu)" />
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="subalign" type="radio" default="1" label="Sublevel Align" description="Please choose this if you want sublevel aligned left(or right) with parent">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
